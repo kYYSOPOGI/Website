@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ako parin ba love?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: none; /* Initially hiding the images */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ako parin ba?</h1>
+    </header>
+    <div class="container">
+        <p>Yes or No?</p>
+        <button onclick="showImage('yes')">Yes</button>
+        <button onclick="showImage('no')">No</button>
+        <img id="yesImage" src="https://i.pinimg.com/originals/c1/24/db/c124db99556e6ca5d0b90c9ecbbe980d.jpg" alt="Yes Image">
+        <img id="noImage" src="https://i.pinimg.com/originals/29/5f/f8/295ff8013e8c704cbb624597106890d1.jpg" alt="No Image">
+        <p>Pindutin mo link sa baba pag yes sinagot mo jshhsha</p>
+        <a href="file:///C:/Users/bhern/Downloads/copy%20link.html"> Heto pindutin moto ayossss</a>
+    </div>
+
+    <script>
+        function showImage(answer) {
+            if (answer === 'yes') {
+                document.getElementById('yesImage').style.display = 'block';
+                document.getElementById('noImage').style.display = 'none';
+            } else {
+                document.getElementById('yesImage').style.display = 'none';
+                document.getElementById('noImage').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
